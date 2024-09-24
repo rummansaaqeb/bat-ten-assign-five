@@ -22,7 +22,9 @@ document.getElementById('btn-donate-now').addEventListener('click', function () 
     const donatedMoneyBalance = donateMoneyAmount + donatedBalance;
     document.getElementById('account-balance').innerText = newBalance;
     document.getElementById('total-donated-amount').innerText = donatedMoneyBalance;
+
     document.getElementById('input-donate-money').value = '';
+    document.getElementById('open-modal').checked = true;
 
     // History
     const today = new Date();
@@ -61,6 +63,7 @@ document.getElementById('btn-donate-now-two').addEventListener('click', function
     document.getElementById('account-balance').innerText = newBalance;
     document.getElementById('total-donated-amount-two').innerText = donatedMoneyBalance;
     document.getElementById('input-donate-money-two').value = '';
+    document.getElementById('open-modal-two').checked = true;
 
     // History
     const today = new Date();
@@ -99,6 +102,7 @@ document.getElementById('btn-donate-now-three').addEventListener('click', functi
     document.getElementById('account-balance').innerText = newBalance;
     document.getElementById('total-donated-amount-three').innerText = donatedMoneyBalance;
     document.getElementById('input-donate-money-three').value = '';
+    document.getElementById('open-modal-three').checked = true;
 
     // History
     const today = new Date();
@@ -139,3 +143,4 @@ document.getElementById('show-history-btn').addEventListener('click', function()
     document.getElementById('show-donation-btn').classList.remove('bg-primary', 'hover:bg-primary')
     document.getElementById('show-donation-btn').classList.add('btn-outline', 'hover:bg-white', 'hover:text-black')
 });
+

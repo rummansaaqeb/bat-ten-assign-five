@@ -18,4 +18,3 @@ function showSectionById(id){
     
     document.getElementById(id).classList.remove('hidden');
 }
-
