@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 5</title>
+    <!-- Tailwind CSS and DaisyUI CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Font CDN -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#B4F461',
+                        secondary: '#F9F7F3',
+                        balance: '#1111110D',
+                        paragraph: '#111111B3'
+                    },
+                    fontFamily: {
+                        Lexend: 'Lexend',
+                    },
+                },
+            },
+        }
+    </script>
+    <style>
+        .glass-navbar{
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.1);
+            /* box-shadow: 0, 4px, 8px, rgba(0, 0, 0, 0.1); */
+            backdrop-filter: blur(18px);
+            z-index: 1000;
+        }
+    </style>
+</head>
+<body class="font-Lexend">
+    <header class="relative bg-secondary h-32">
+        <!-- Navbar Starts Here -->
+            <nav class="glass-navbar">
+                <div class="w-full flex justify-around items-center h-32 pb-8 bg-secondary">
+                    <button class="btn w-28 bg-primary font-bold text-lg px-6 hover:bg-primary">Blog</button>
+                    <div class="flex justify-center items-center">
+                        <img class="w-10 h-10" src="./assets/logo.png" alt="Donate Bangladesh Logo">
+                        <h3 class="text-lg font-bold mt-3 ml-4">Donate Bangladesh</h3>
+                    </div>
+                    <div class="flex justify-center items-center">
+                        <img src="./assets/coin.png" alt="Picture of a coin">
+                        <p class="font-bold text-gray-700 ml-3 mr-1">5500</p><span class="font-bold text-gray-700">BDT</span>
+                    </div>
+                </div>
+                <div class="flex justify-center items-center mt-28 mb-5">
+                    <button class="btn px-8 text-lg font-bold bg-primary mr-5 hover:bg-primary">Donation</button>
+                    <button class="btn btn-outline px-8 text-lg font-bold hover:bg-white hover:text-black">History</button>
+                </div>
+            </nav>
+            <!-- Navbar Ends Here -->
+    </header>
+    <main>
+        <!-- Donate for Noakhali Section Starts Here -->
+         <section class="flex justify-center items-center container mx-auto mt-48 border rounded-xl p-8 shadow-lg">
+            <div class="w-1/2">
+                <img class="w-4/5 ml-24" src="./assets/noakhali.png" alt="">
+            </div>
+            <div class="w-1/2 mr-7">
+                <button class="btn btn-sm no-animation hover:bg-balance bg-balance mb-4"><img src="./assets/coin.png" alt=""><p class="text-gray-700">1000</p><span class="text-gray-700">BDT</span></button>
+                <h3 class="text-lg font-bold mb-4">Donate for Flood at Noakhali, Bangladesh</h3>
+                <p class="text-paragraph mb-12"> The recent floods in Noakhali have caused significant damage to <br> homes  infrastructure. Your donation will help provide essential <br> supplies and  to those affected by this disaster. Every contribution, <br> big or small, makes  difference. Please join us in supporting the relief <br> efforts and making a positive impact on the lives of those in need.</p>
+                <input id="input-donate-money" class="mb-12 p-5 w-full mx-auto border rounded-xl font-light" type="text" placeholder="Write Donation Amount"> <br>
+                <button id="btn-donate-now" class="btn bg-primary hover:bg-primary w-full text-xl font-bold">Donate Now</button>
+            </div>
+         </section>
+         <!-- Donate For Noakhali Section Ends Here -->
+
+
+         <!-- Donate For Feni Section Starts Here -->
+         <section class="flex justify-center items-center container mx-auto mt-8 border rounded-xl p-8 shadow-lg">
+            <div class="w-1/2">
+                <img class="ml-24" src="./assets/feni.png" alt="">
+            </div>
+            <div class="w-1/2 mr-7">
+                <button class="btn btn-sm no-animation hover:bg-balance bg-balance mb-4"><img src="./assets/coin.png" alt=""><p class="text-gray-700">600</p><span class="text-gray-700">BDT</span></button>
+                <h3 class="text-lg font-bold mb-4">Donate for Flood Relief in Feni,Bangladesh</h3>
+                <p class="text-paragraph mb-5">The recent floods in Feni have devastated local communities, leading <br> to severe disruption and loss. Your generous donation will help <br> provide immediate aid, including food, clean water, and medical <br> supplies, to those affected by this calamity. Together, we can offer <br> crucial support and help rebuild lives in the aftermath of this disaster. <br> Every contribution counts towards making a real difference. Please <br> consider donating today to assist those in urgent need.</p>
+                <input class="mb-12 p-5 w-full mx-auto border rounded-xl font-light" type="text" placeholder="Write Donation Amount"> <br>
+                <button class="btn bg-primary hover:bg-primary w-full text-xl font-bold">Donate Now</button>
+            </div>
+         </section>
+          <!-- Donate For Feni Ends Here -->
+
+          <!-- Aid For Injured In Quota Movement Section Starts Here -->
+          <section class="flex justify-center items-center container mx-auto mt-8 mb-20 border rounded-xl p-8 shadow-lg">
+            <div class="w-1/2">
+                <img class="ml-24" src="./assets/quota-protest.png" alt="">
+            </div>
+            <div class="w-1/2 mr-7">
+                <button class="btn btn-sm no-animation hover:bg-balance bg-balance mb-4"><img src="./assets/coin.png" alt=""><p class="text-gray-700">2400</p><span class="text-gray-700">BDT</span></button>
+                <h3 class="text-lg font-bold mb-4">Aid for Injured in the Quota Movement</h3>
+                <p class="text-paragraph mb-6">The recent Quota movement has resulted in numerous injuries and <br> significant hardship for many individuals. Your support is crucial in <br> providing medical assistance, rehabilitation, and necessary supplies <br> to those affected. By contributing, you help ensure that injured <br> individuals receive the care and support they need during this <br> challenging time. Every donation plays a vital role in alleviating their <br> suffering and aiding in their recovery. Please consider making a <br> donation to support these brave individuals in their time of need.</p>
+                <input class="mb-12 p-5 w-full mx-auto border rounded-xl font-light" type="text" placeholder="Write Donation Amount"> <br>
+                <button class="btn bg-primary hover:bg-primary w-full text-xl font-bold">Donate Now</button>
+            </div>
+         </section>
+          <!-- Aid For Injured In Quota Movement Section End Here -->
+    </main>
+    <footer class="bg-secondary h-32 w-full">
+
+    </footer>
+
+</body>
+
+</html>
