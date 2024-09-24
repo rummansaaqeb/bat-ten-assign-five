@@ -46,13 +46,13 @@
     <header class="relative bg-secondary h-32">
         <!-- Navbar Starts Here -->
         <nav class="glass-navbar">
-            <div class="w-full flex justify-around items-center h-32 pb-8 bg-secondary">
-                <button id="btn-blog" class="btn w-28 bg-primary font-bold text-lg px-6 hover:bg-primary">Blog</button>
+            <div class="w-full flex lg:flex-row justify-center lg:justify-around items-center h-32 pb-8 bg-secondary">
+                <button id="btn-blog" class="btn w-20 lg:w-28 bg-primary lg:mr-0 mr-3 font-bold lg:text-lg text-sm lg:px-6 px-2 hover:bg-primary">Blog</button>
                 <div class="flex justify-center items-center">
-                    <img class="w-10 h-10" src="./assets/logo.png" alt="Donate Bangladesh Logo">
-                    <h3 class="text-lg font-bold mt-3 ml-4">Donate Bangladesh</h3>
+                    <img class="w-10 h-10 lg:ml-0 ml-12" src="./assets/logo.png" alt="Donate Bangladesh Logo">
+                    <h3 class="lg:text-lg text-sm font-bold mt-3 lg:ml-4 ml-2">Donate Bangladesh</h3>
                 </div>
-                <div class="flex justify-center items-center">
+                <div class="flex justify-center items-center lg:mr-0 mr-5">
                     <img src="./assets/coin.png" alt="Picture of a coin">
                     <p id="account-balance" class="font-bold text-gray-700 ml-3 mr-1">5500</p><span
                         class="font-bold text-gray-700">BDT</span>
@@ -69,23 +69,23 @@
     </header>
     <main id="donation-section">
         <!-- Donate for Noakhali Section Starts Here -->
-        <section class="flex justify-center items-center container mx-auto mt-48 border rounded-xl p-8 shadow-lg">
+        <section class="flex lg:flex-row flex-col justify-center items-center lg:container lg:mx-auto mt-48 border rounded-xl p-8 shadow-lg">
             <div class="w-1/2">
-                <img class="w-4/5 ml-24" src="./assets/noakhali.png" alt="">
+                <img class="lg:w-4/5 w-[100%] lg:ml-24 mb-5" src="./assets/noakhali.png" alt="">
             </div>
             <div class="w-1/2 mr-7">
-                <button class="btn btn-sm no-animation hover:bg-balance bg-balance mb-4"><img src="./assets/coin.png"
+                <button class="btn btn-sm no-animation hover:bg-balance bg-balance mb-4 ml-5 lg:ml-0"><img src="./assets/coin.png"
                         alt="">
                     <p id="total-donated-amount" class="text-gray-700">1000</p><span class="text-gray-700">BDT</span>
                 </button>
                 <h3 class="text-lg font-bold mb-4">Donate for Flood at Noakhali, Bangladesh</h3>
-                <p class="text-paragraph mb-12"> The recent floods in Noakhali have caused significant damage to <br>
-                    homes infrastructure. Your donation will help provide essential <br> supplies and to those affected
-                    by this disaster. Every contribution, <br> big or small, makes difference. Please join us in
-                    supporting the relief <br> efforts and making a positive impact on the lives of those in need.</p>
+                <p class="text-paragraph mb-5">The recent floods in Noakhali have caused significant damage to <br class="hidden lg:block">
+                    homes infrastructure. Your donation will help provide essential <br class="hidden lg:block"> supplies and to those affected
+                    by this disaster. Every contribution, <br class="hidden lg:block"> big or small, makes difference.</span> Please join us in
+                    supporting the relief <br class="hidden lg:block"> efforts and making a positive impact on the lives of those in need.</p>
                 <input id="input-donate-money" class="mb-12 p-5 w-full mx-auto border rounded-xl font-light" type="text"
                     placeholder="Write Donation Amount"> <br>
-                <button id="btn-donate-now" onclick=""
+                <button id="btn-donate-now"
                     class="btn bg-primary hover:bg-primary w-full text-xl font-bold">Donate Now</button>
                 <!-- Modal -->
                 <input type="checkbox" id="open-modal" class="modal-toggle" />
