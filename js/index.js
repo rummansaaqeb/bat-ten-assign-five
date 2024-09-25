@@ -142,5 +142,6 @@ document.getElementById('show-history-btn').addEventListener('click', function()
     document.getElementById('show-history-btn').classList.add('bg-primary', 'hover:bg-primary');
     document.getElementById('show-donation-btn').classList.remove('bg-primary', 'hover:bg-primary')
     document.getElementById('show-donation-btn').classList.add('btn-outline', 'hover:bg-white', 'hover:text-black')
+    document.getElementById('footer-container').classList.add('hidden')
 });
 

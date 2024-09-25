@@ -43,28 +43,32 @@
 <body class="font-Lexend">
     <header class="relative bg-secondary h-32">
         <!-- Navbar Starts Here -->
-            <nav class="glass-navbar">
-                <div class="w-full flex justify-around items-center h-32 pb-8 bg-secondary">
-                    <button id="btn-home-redirect" class="btn w-28 bg-primary font-bold text-lg px-6 hover:bg-primary">Home</button>
-                    <div class="flex justify-center items-center">
-                        <img class="w-10 h-10" src="./assets/logo.png" alt="Donate Bangladesh Logo">
-                        <h3 class="text-lg font-bold mt-3 ml-4">Donate Bangladesh</h3>
-                    </div>
-                    <div class="flex justify-center items-center">
-                        <img src="./assets/coin.png" alt="Picture of a coin">
-                        <p class="font-bold text-gray-700 ml-3 mr-1">5500</p><span class="font-bold text-gray-700">BDT</span>
-                    </div>
+        <nav class="glass-navbar">
+            <div class="w-full flex lg:flex-row justify-center lg:justify-around items-center h-32 pb-8 bg-secondary">
+                <button id="btn-home-redirect"
+                    class="btn w-20 lg:w-28 bg-primary lg:mr-0 mr-3 font-bold lg:text-lg text-sm lg:px-6 px-2 hover:bg-primary">Home</button>
+                <div class="flex justify-center items-center">
+                    <img class="w-10 h-10 lg:ml-0 ml-12" src="./assets/logo.png" alt="Donate Bangladesh Logo">
+                    <h3 class="lg:text-lg text-sm font-bold mt-3 lg:ml-4 ml-2">Donate Bangladesh</h3>
                 </div>
-                <div class="flex justify-center items-center mt-28 mb-5">
-                    <button class="btn px-8 text-lg font-bold bg-primary mr-5 hover:bg-primary">Donation</button>
-                    <button class="btn btn-outline px-8 text-lg font-bold hover:bg-white hover:text-black">History</button>
+                <div class="flex justify-center items-center lg:mr-0 mr-2 lg:ml-0 ml-4">
+                    <img src="./assets/coin.png" alt="Picture of a coin">
+                    <p id="account-balance" class="font-bold text-gray-700 ml-3 mr-1">5500</p><span
+                        class="font-bold text-gray-700">BDT</span>
                 </div>
-            </nav>
+            </div>
+            <div class="flex justify-center items-center mt-28 mb-5">
+                <button id="show-donation-btn"
+                    class="btn px-8 text-lg font-bold bg-primary mr-5 hover:bg-primary">Donation</button>
+                <button id="show-history-btn"
+                    class="btn btn-outline px-8 text-lg font-bold hover:bg-white hover:text-black">History</button>
+            </div>
+        </nav>
             <!-- Navbar Ends Here -->
     </header>
     <main>
-        <section class="container mx-auto space-y-6 mb-24">
-            <h1 class="mt-60 mb-20 font-bold text-3xl">Frequently Asked Questions (FAQ):</h1>
+        <section class="lg:container lg:mx-auto space-y-6 mb-24">
+            <h1 class="mt-60 mb-20 font-bold text-3xl mx-4">Frequently Asked Questions (FAQ):</h1>
             <div class="collapse collapse-arrow border">
                 <input type="radio" name="my-accordion-3" checked="checked" />
                 <div class="collapse-title text-xl font-medium">What is the Document Object Model (DOM)?</div>
