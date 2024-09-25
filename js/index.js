@@ -28,12 +28,11 @@ document.getElementById('btn-donate-now').addEventListener('click', function () 
 
     // History
     const today = new Date();
-    const localOffset = (today.getTimezoneOffset())
     const div = document.createElement('div');
     div.innerHTML = `
        <div class = "border rounded-xl p-5 mb-5">
        <h1 class = "ml-4 mt-4"> ${donateMoneyAmount} Taka Is Donated For Flood at Noakhali, Bangladesh</h1><br>
-        <span class = "bg-slate-200 p-2 rounded-xl w-full">${today} ${localOffset}</span>
+        <span class = "bg-slate-200 p-2 rounded-xl w-full">${today}</span>
        </div>`;
     document.getElementById('history-container').appendChild(div);
 })
@@ -67,12 +66,11 @@ document.getElementById('btn-donate-now-two').addEventListener('click', function
 
     // History
     const today = new Date();
-    const localOffset = (today.getTimezoneOffset())
     const div = document.createElement('div');
     div.innerHTML = `
        <div class = "border rounded-xl p-5 mb-5">
        <h1 class = "ml-4 mt-4"> ${donateMoneyAmount} Taka Is Donated For Flood Relief in Feni, Bangladesh</h1><br>
-        <span class = "bg-slate-200 p-2 rounded-xl w-full">${today} ${localOffset}</span>
+        <span class = "bg-slate-200 p-2 rounded-xl w-full">${today}</span>
        </div>`;
     document.getElementById('history-container').appendChild(div);
 })
@@ -106,13 +104,12 @@ document.getElementById('btn-donate-now-three').addEventListener('click', functi
 
     // History
     const today = new Date();
-    const localOffset = (today.getTimezoneOffset())
     const div = document.createElement('div');
     div.innerHTML = `
    <div class = "border rounded-xl p-5 mb-5">
    <h1 class = "ml-4 mt-4"> ${donateMoneyAmount} Taka Is Donated For 
     Aid for Injured in the Quota Movement</h1><br>
-    <span class = "bg-slate-200 p-2 rounded-xl w-full">${today} ${localOffset}</span>
+    <span class = "bg-slate-200 p-2 rounded-xl w-full">${today}</span>
    </div>`;
     document.getElementById('history-container').appendChild(div);
 });
